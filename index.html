@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="../Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Mobile Navbar -->
+    <nav class="navbar bg-dark d-md-none">
+
+        <div class="container-fluid">
+
+            <span class="navbar-brand text-white">
+                Admin Dashboard
+            </span>
+
+            <button
+                class="btn btn-light"
+                id="menuButton">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <div class="dashboard">
+
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="sidebar">
+
+            <h3 class="text-white text-center mb-4">
+                Admin Panel
+            </h3>
+
+            <ul class="nav flex-column">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Customers
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Orders
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        Reports
+                    </a>
+                </li>
+
+                <li class="nav-item mt-4">
+                    <a href="#" class="nav-link logout">
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+
+        <main class="main-content">
+            <h1 class="mb-4">
+                Dashboard
+            </h1>
+
+            <!-- Dashboard Cards -->
+            <div class="row g-4 mb-4">
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+                            <h6 class="text-muted">
+                                Total Customers
+                            </h6>
+
+                            <h2>
+                                1,250
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+                            <h6 class="text-muted">
+                                Total Products
+                            </h6>
+
+                            <h2>
+                                350
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+                            <h6 class="text-muted">
+                                Total Orders
+                            </h6>
+
+                            <h2>
+                                2,450
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card dashboard-card">
+
+                        <div class="card-body">
+                            <h6 class="text-muted">
+                                Total Sales
+                            </h6>
+
+                            <h2>
+                                $45,800
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card mb-4">
+
+                <div class="card-body">
+                    <h4 class="mb-3">
+                        Recent Orders
+                    </h4>
+
+                    <div class="table-responsive">
+
+                        <table class="table table-striped">
+
+                            <thead>
+
+                                <tr>
+                                    <th>
+                                        Order ID
+                                    </th>
+
+                                    <th>
+                                        Customer
+                                    </th>
+
+                                    <th>
+                                        Product
+                                    </th>
+
+                                    <th>
+                                        Amount
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>#1001</td>
+
+                                    <td>Hadi Sleem</td>
+
+                                    <td>Laptop</td>
+
+                                    <td>$800</td>
+
+                                    <td>
+                                        <span class="badge bg-success">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1002</td>
+
+                                    <td>Ali Ahmad</td>
+
+                                    <td>Smart Watch</td>
+
+                                    <td>$150</td>
+
+                                    <td>
+                                        <span class="badge bg-warning">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1003</td>
+
+                                    <td>Hasan Hasan</td>
+
+                                    <td>Keyboard</td>
+
+                                    <td>$60</td>
+
+                                    <td>
+                                        <span class="badge bg-success">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1004</td>
+
+                                    <td>Mohamad Jawad</td>
+
+                                    <td>Printer</td>
+
+                                    <td>$300</td>
+
+                                    <td>
+                                        <span class="badge bg-danger">
+                                            Cancelled
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-body">
+
+                    <h4 class="mb-3">
+                        Recent Customers
+                    </h4>
+
+                    <div class="list-group">
+
+                        <div class="list-group-item">
+                            <strong>Hadi Sleem</strong>
+                            <br>
+                            Hadi@example.com
+                        </div>
+
+                        <div class="list-group-item">
+                            <strong>Ali Ahmad</strong>
+                            <br>
+                            Ali@example.com
+                        </div>
+
+                        <div class="list-group-item">
+                            <strong>Hasan Hasan</strong>
+                            <br>
+                            Hasan@example.com
+                        </div>
+
+                        <div class="list-group-item">
+                            <strong>Mohamad Jawad</strong>
+                            <br>
+                            Jawad@example.com
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="../Bootstrap/bootstrap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
